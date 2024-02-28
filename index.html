@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mi Página Personal</title>
+  <!-- Enlace al archivo CSS de Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+
+    body {
+      background-color: #f3f5f7;
+      color: #495057;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Estilos para la barra de navegación */
+    .navbar {
+      background-color: #4caf50; /* Verde */
+      border-bottom: 2px solid #388e3c; /* Verde más oscuro */
+    }
+
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #ffffff;
+      font-weight: bold;
+    }
+
+    .navbar-brand:hover, .navbar-nav .nav-link:hover {
+      color: #388e3c; /* Verde más oscuro al pasar el ratón */
+    }
+
+    /* Estilos para las secciones */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section h2 {
+      color: #4caf50; /* Verde */
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    /* Estilos para el pie de página */
+    footer {
+      background-color: #4caf50; /* Verde */
+      color: #ffffff;
+      padding: 20px 0;
+      border-top: 2px solid #388e3c; /* Verde más oscuro */
+    }
+
+    /* Estilos para la sección "Acerca de mí" */
+    #acerca {
+      background-color: #ffffff;
+      border-bottom: 2px solid #e0e0e0; /* Gris claro */
+    }
+
+    #acerca .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #acerca img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilos para la sección "Habilidades" */
+    #habilidades {
+      background-color: #f3f5f7;
+      text-align: center;
+      border-bottom: 2px solid #e0e0e0; /* Gris claro */
+    }
+
+    #habilidades .row {
+      margin-bottom: 30px;
+    }
+
+    #habilidades img {
+      max-width: 180px;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #habilidades .col-md-6 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Estilos para la sección "Portafolio" */
+    #portafolio {
+      background-color: #ffffff;
+      border-bottom: 2px solid #e0e0e0; /* Gris claro */
+    }
+
+    #portafolio .container {
+      text-align: center;
+    }
+
+    #portafolio .row {
+      margin-bottom: 15px;
+    }
+
+    #portafolio img {
+      max-width: 450px;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #portafolio .col-md-6 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Estilos para el botón "Ver" */
+    .ver-btn {
+      margin-top: 15px;
+    }
+
+    /* Estilos para los modales */
+    .modal-content {
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-header {
+      background-color: #4caf50; /* Verde */
+      color: #ffffff;
+      border-bottom: 2px solid #388e3c; /* Verde más oscuro */
+    }
+
+    .modal-title {
+      font-weight: bold;
+    }
+
+    .modal-body {
+      padding: 20px;
+    }
+
+    .modal-footer {
+      border-top: 2px solid #388e3c; /* Verde más oscuro */
+    }
+
+    /* Estilos para el botón "Cerrar" en los modales */
+    .close {
+      color: #4caf50; /* Verde */
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #388e3c; /* Verde más oscuro al pasar el ratón */
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* Estilos para la sección "Contacto" */
+    #contacto {
+      background-color: #ffffff;
+      border-bottom: 2px solid #e0e0e0; /* Gris claro */
+    }
+
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .contact-icons a {
+      margin: 0 10px;
+    }
+
+    .contact-icons img {
+      width: 100px;
+      height: auto;
+    }
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+      color: #28a745; /* Verde de Bootstrap */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Mi Página</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#acerca">Acerca de mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#habilidades">Resumen de habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portafolio">Portafolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sección: Acerca de mí -->
+  <section id="acerca" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Sebastian Beller</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget mauris eu leo commodo lobortis a ac risus. Donec et sem non augue blandit tristique nec nec libero. Phasellus molestie eget leo at molestie. Fusce ut ligula in ex posuere vehicula. Proin id egestas ante. Suspendisse vel lacus neque. In hac habitasse platea dictumst. In fringilla urna sem, non iaculis ante tristique at. Nunc sed leo egestas sem aliquam volutpat vitae bibendum mi. Duis bibendum pulvinar nulla ut sollicitudin. Pellentesque quis mi velit. Quisque porta sem metus, vitae ultricies nisl elementum at. Nunc placerat nibh eu lorem viverra, vel fringilla massa venenatis. Nullam a vestibulum justo, quis fringilla mauris.
+
+            Sed lacinia nisi tellus, sed egestas justo pretium vel. Ut nisl est, interdum sed finibus non, tempus ac ligula. Donec sed sapien eget nisi tempor facilisis eu eu lorem. Nunc porttitor velit commodo laoreet dictum. Proin nec justo sit amet arcu egestas sodales in in felis. Nunc neque ipsum, sollicitudin et dui eget, consequat malesuada est. Vivamus rhoncus congue est, ut ultrices mi gravida quis. Donec ut felis sit amet nunc pulvinar ornare sed non nisl. Praesent mattis accumsan gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="img/me.png" alt="Mi Foto">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Resumen de habilidades -->
+  <section id="habilidades" class="section">
+    <div class="container">
+      <h2>Habilidades</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/habilidad1.png" alt="CSS">
+          <h4>CSS</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis vestibulum sodales.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="img/habilidad2.png" alt="HTML">
+          <h4>HTML</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis vestibulum sodales.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/habilidad3.png" alt="JavaScript">
+          <h4>JavaScript</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis vestibulum sodales.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="img/habilidad4.png" alt="Python">
+          <h4>Python</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis vestibulum sodales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Portafolio -->
+  <section id="portafolio" class="section">
+    <div class="container">
+      <h2>Portafolio</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/portafolio1.png" alt="Proyecto C++">
+          <h4>Cuidando Mi Jardin</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis vestibulum sodales.</p>
+          <button class="btn btn-success ver-btn m-3" data-toggle="modal" data-target="#modalCSS">Ver</button>
+        </div>
+        <div class="col-md-6">
+          <img src="img/portafolio2.png" alt="Proyecto C# y sql">
+          <h4>Prototipo de Amazon</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis vestibulum sodales.</p>
+          <button class="btn btn-success ver-btn m-2" data-toggle="modal" data-target="#modalHTML">Ver</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/portafolio3.png" alt="Proyecto JavaScript CSS HTML">
+          <h4>TDD Genius</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis vestibulum sodales.</p>
+          <button class="btn btn-success ver-btn m-2" data-toggle="modal" data-target="#modalJavaScript">Ver</button>
+        </div>
+        <!-- Agregar más proyectos según sea necesario -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Contacto -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2>Contacto</h2>
+      
+      <!-- Logos de redes sociales -->
+      <div class="contact-icons">
+        <a href="https://www.instagram.com/sebassbeller" target="_blank">
+          <img src="img/instagram-logo.png" alt="Instagram">
+        </a>
+        <a href="https://wa.me/59165392746" target="_blank">
+          <img src="img/whatsapp-logo.png" alt="WhatsApp">
+        </a>
+        <!-- Agregar más redes sociales según sea necesario -->
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2024 Mi Página Personal</p>
+    </div>
+  </footer>
+
+  <!-- Modales -->
+  <div class="modal fade" id="modalCSS" tabindex="-1" role="dialog" aria-labelledby="modalCSSLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCSSLabel">Proyecto CSS</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Contenido del modal -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalHTML" tabindex="-1" role="dialog" aria-labelledby="modalHTMLLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalHTMLLabel">Proyecto HTML</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Contenido del modal -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalJavaScript" tabindex="-1" role="dialog" aria-labelledby="modalJavaScriptLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalJavaScriptLabel">Proyecto JavaScript</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Contenido del modal -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enlaces a los archivos JS de Bootstrap y jQuery (necesarios para el funcionamiento de Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
