@@ -1,0 +1,188 @@
+
+body {
+    background-color: #f3f5f7;
+    color: #495057;
+    font-family: 'Arial', sans-serif;
+  }
+
+  /* Estilos para la barra de navegación */
+  .navbar {
+    background-color: #4caf50; /* Verde */
+    border-bottom: 2px solid #388e3c; /* Verde más oscuro */
+  }
+
+  .navbar-brand, .navbar-nav .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .navbar-brand:hover, .navbar-nav .nav-link:hover {
+    color: #388e3c; /* Verde más oscuro al pasar el ratón */
+  }
+
+  /* Estilos para las secciones */
+  .section {
+    padding: 80px 0;
+  }
+
+  .section h2 {
+    color: #4caf50; /* Verde */
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #4caf50; /* Verde */
+    color: #ffffff;
+    padding: 20px 0;
+    border-top: 2px solid #388e3c; /* Verde más oscuro */
+  }
+
+  /* Estilos para la sección "Acerca de mí" */
+  #acerca {
+    background-color: #ffffff;
+    border-bottom: 2px solid #e0e0e0; /* Gris claro */
+  }
+
+  #acerca .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #acerca img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilos para la sección "Habilidades" */
+  #habilidades {
+    background-color: #f3f5f7;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0; /* Gris claro */
+  }
+
+  #habilidades .row {
+    margin-bottom: 30px;
+  }
+
+  #habilidades img {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  #habilidades .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Estilos para la sección "Portafolio" */
+  #portafolio {
+    background-color: #ffffff;
+    border-bottom: 2px solid #e0e0e0; /* Gris claro */
+  }
+
+  #portafolio .container {
+    text-align: center;
+  }
+
+  #portafolio .row {
+    margin-bottom: 15px;
+  }
+
+  #portafolio img {
+    max-width: 450px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  #portafolio .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Estilos para el botón "Ver" */
+  .ver-btn {
+    margin-top: 15px;
+  }
+
+  /* Estilos para los modales */
+  .modal-content {
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .modal-header {
+    background-color: #4caf50; /* Verde */
+    color: #ffffff;
+    border-bottom: 2px solid #388e3c; /* Verde más oscuro */
+  }
+
+  .modal-title {
+    font-weight: bold;
+  }
+
+  .modal-body {
+    padding: 20px;
+  }
+
+  .modal-footer {
+    border-top: 2px solid #388e3c; /* Verde más oscuro */
+  }
+
+  /* Estilos para el botón "Cerrar" en los modales */
+  .close {
+    color: #4caf50; /* Verde */
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #388e3c; /* Verde más oscuro al pasar el ratón */
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Estilos para la sección "Contacto" */
+  #contacto {
+    background-color: #ffffff;
+    border-bottom: 2px solid #e0e0e0; /* Gris claro */
+  }
+
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .contact-icons a {
+    margin: 0 10px;
+  }
+
+  .contact-icons img {
+    width: 100px;
+    height: auto;
+  }
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #28a745; /* Verde de Bootstrap */
+  }
